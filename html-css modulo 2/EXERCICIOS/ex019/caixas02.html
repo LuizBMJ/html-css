@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: lightblue;
+        }
+        header, main, article {
+            border: 1px solid #868686;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 1em;
+            font-weight: bold;
+            color: white;
+            padding: 1px;
+            margin: auto;
+            border-radius: 5px;
+            border: 1px solid white;
+            background-color: #5e5e5e;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        h1, h2, h3, h4 {
+            margin-top: 1px;
+        }
+        nav {
+            border: 1px solid #868686;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            background-color: #97bdca;
+            box-shadow: 3px 3px 1px rgb(94, 94, 94);
+        }
+        nav > ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            background-color: white;
+            width: 200px;
+            border-radius: 5px;
+            border: 1px solid #868686;
+            margin: auto;
+        }
+        nav > ul > li {
+            display: inline-block;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        nav > ul > li > a {
+            text-decoration: underline;
+            color: black;
+        }
+
+        #Titulo-principal {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            text-align: center;
+            color: rgb(104, 169, 189)
+
+        }
+
+        #noticias-brasil {
+            color: black;
+            background-color: #97bdca;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #868686;
+            box-shadow: 3px 3px 1px #5e5e5e;
+        }
+
+        #noticias-brasil > article {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="Titulo-principal">Exemplo de Tags de Agrupamento</h1>
+        <nav>
+            <ul>
+                <li><a href="caixas01.html">Caixas01</a></li>
+                <li><a href="caixas02.html">Caixas02</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="Assuntos">
+            <h2>Assuntos Recentes</h2>
+            <section id="noticias-brasil">
+                <h3>Notícias do Brasil</h3>
+                <article>
+                    <h4>Notícia 1</h4>
+                    <p>Conteúdo da notícia 1...</p>
+                </article>
+                <article>
+                    <h4>Notícia 2</h4>
+                    <p>Conteúdo da notícia 2...</p>
+                </article>
+            </section>
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por Jorge</p>
+
+    </footer>
+
+    
+</body>
+</html>
