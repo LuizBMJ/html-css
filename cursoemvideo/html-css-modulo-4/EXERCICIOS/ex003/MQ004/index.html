@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="estilos/media-queries.css" media="screen">
     <title>Meu site</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
-        <div>
+        <div id="imenu-hamburguer" >
+            <img src="imagens/menu.png" alt="Menu Hamburguer"  onclick="clickMenu()">
+        </div>
+        <div id="imenu">
             <a href="#" target="_self">Opção 1</a>
             <a href="#" target="_self">Opção 2</a>
             <a href="#" target="_self">Opção 3</a>
@@ -27,5 +30,26 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed maiores hic aperiam blanditiis, fugiat temporibus quidem, eaque ratione ipsa atque rerum accusantium molestiae, minus quos libero alias ea minima dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rem quos quam dolores at ipsam, quisquam, rerum molestiae natus porro quis culpa totam dignissimos sequi adipisci ipsa ratione possimus? Nam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam ducimus maxime repellat corporis accusamus vel veniam sed. Animi perspiciatis non provident odio? Rerum id ipsam exercitationem numquam, veniam quo beatae.</p>
     </main>
     
+    <script>
+        function clickMenu() {
+            if (imenu.style.display == 'none') {
+                imenu.style.display = 'flex'
+            }
+            
+            else {
+                imenu.style.display = 'none'
+            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                imenu.style.display = 'flex'
+            }
+
+            else {
+                imenu.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>

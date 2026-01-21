@@ -11,27 +11,65 @@
 
 header {
     background-color: gray;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.733);
 }
 
 header h1 {
+    font-size: 2.5em;
     text-align: center;
-    padding: 10px;
+    text-shadow: 1px 3px rgba(0, 0, 0, 0.445);
+    padding: 20px;
     color: white;
 }
 
-header div {
-    display: flex;
-
-}
-
-header div a {
-    text-decoration: none;
-    color: white;
+div#imenu-hamburguer {
+    display: grid;
+    justify-content: center;
+    align-content: center;
     padding: 5px;
-    margin: 5px;
-    background-color: rgb(151, 151, 151);
 }
 
-header div a:hover {
-    border: 2px solid white;
+div#imenu-hamburguer img{
+    width: 50px;
+    cursor: pointer;
+}
+
+
+div#imenu {
+    display: none;
+    flex-direction: column;
+    flex: auto;
+    align-items: stretch;
+}
+
+div#imenu a {
+    text-align: center;
+    text-decoration: none;
+    text-decoration-line: none;
+    color: white;
+    background-color: rgb(99, 99, 99);
+    padding: 5px;
+    border-top: 1px solid rgb(219, 219, 219);
+}
+
+div#imenu a:hover {
+    background-color: rgb(219, 219, 219);
+    border-top: 1px solid rgb(99, 99, 99);
+    color: black;
+}
+
+main {
+    width: 80vw;
+    margin: auto;
+    margin-top: 5px;
+}
+
+main h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+main p {
+    text-align: justify;
+    margin: 10px;
 }
