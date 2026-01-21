@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/* Toda as medias queries */
+
+/* Typical Device Breakpoints 
+Dispositivos pequenos até 480px
+Celulares até 767px
+Tablets até 979px
+Computadores até 1280px
+Tv e outros acima de 1280px
+*/
+
+@media print{
+
+    body {
+        background: url(../imagens/back-print.jpg);
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after {
+        content: 'Essa impressão é graças ao programador esforçado';
+        text-decoration: overline;
+    }
+
+    img#iphone { display: none;}
+    img#itablet { display: none;}
+    img#iprint { display: block;}
+    img#ipc { display: none;}
+    img#itv { display: none;}
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 992px){ /* Tablet */
+
+    body {
+        background: url(../imagens/back-tablet.jpg);
+    }
+
+    img#iphone { display: none;}
+    img#itablet { display: block;}
+    img#iprint { display: none;}
+    img#ipc { display: none;}
+    img#itv { display: none;}
+
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1280px) { /* Computadores */
+
+    body {
+        background: url(../imagens/back-pc.jpg);
+    }
+
+    img#iphone { display: none;}
+    img#itablet { display: none;}
+    img#iprint { display: none;}
+    img#ipc { display: block;}
+    img#itv { display: none;}
+
+    
+}
+
+@media screen and (min-width: 1280px) { /* Dispositivos Grandes */
+
+    body {
+        background: url(../imagens/back-tv.jpg);
+    }
+
+    img#iphone { display: none;}
+    img#itablet { display: none;}
+    img#iprint { display: none;}
+    img#ipc { display: none;}
+    img#itv { display: block;}
+
+    
+}

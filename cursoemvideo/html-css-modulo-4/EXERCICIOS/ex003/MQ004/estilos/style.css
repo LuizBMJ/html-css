@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/* Mobile First*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: gray;
+}
+
+header h1 {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+header div {
+    display: flex;
+
+}
+
+header div a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(151, 151, 151);
+}
+
+header div a:hover {
+    border: 2px solid white;
+}

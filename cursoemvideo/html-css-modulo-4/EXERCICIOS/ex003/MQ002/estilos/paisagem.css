@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* Configurações de modo paisagem */
+
+body {
+    background: url(../Imagens/cev-landscape.jpg) no-repeat;
+    background-size: contain;
+    background-position: left bottom;
+}
