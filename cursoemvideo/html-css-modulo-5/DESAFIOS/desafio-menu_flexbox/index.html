@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu FlexBox</title>
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/media-queries.css" media="screen">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        <div id="imenuhamburguer" onclick="abrirMenu()">
+            <img src="imagens/menu.png" alt="">
+        </div>
+        <div id="imenu">
+            <a href="#" class="itens">Opção 1</a>
+            <a href="#" class="itens">Opção 2</a>
+            <a href="#" class="itens">Opção 3</a>
+            <a href="#" class="itens">Opção 4</a>
+            <a href="#" class="itens">Opção 5</a>
+        </div>
+    </header>
+    <main>
+        <h1>Teste de Flexbox</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi optio magnam voluptatem expedita consectetur doloribus? Cumque illo laudantium ea at provident excepturi obcaecati, eos necessitatibus repudiandae tenetur cupiditate inventore dolor? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit dignissimos voluptas cupiditate modi aspernatur ea, quod aperiam magnam aliquam hic necessitatibus molestiae nihil libero soluta laudantium non a maxime deserunt! lorem
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste pariatur consequuntur veniam. Corporis voluptatum esse provident, eius animi modi labore recusandae assumenda error officiis! Facilis perspiciatis quod neque provident odio.
+        </p>
+    </main>
+
+    <script>
+        function abrirMenu() {
+            if (imenu.style.display == 'flex') {
+                imenu.style.display = 'none'
+            }
+
+            else {
+                imenu.style.display = 'flex'
+            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 767) {
+                imenu.style.display = 'flex'
+            }
+
+            else {
+                imenu.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>

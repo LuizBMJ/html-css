@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints 
+Dispositivos pequenos até 480px
+Celulares até 767px
+Tablets até 992px
+Computadores até 1280px
+Tv e outros acima de 1280px
+*/
+
+@media screen and (min-width: 767px) {
+
+    header > div#imenuhamburguer {
+        display: none;
+    }
+
+    header > div#imenu {
+        display: flex;
+        flex-flow: row;
+    }
+
+    header > div#imenu a.itens {
+        border-radius: 5px;
+        margin: 5px 10px 0px;
+    }
+
+    header > div#imenu a.itens:hover {
+        transform: translate(-5px, -5px);
+        transition: transform 0.3s;
+    }
+}

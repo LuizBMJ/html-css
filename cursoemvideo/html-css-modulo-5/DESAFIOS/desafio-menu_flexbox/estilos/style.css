@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(201, 201, 201);
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    background-color: rgb(109, 109, 109);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.589);
+}
+
+header h1 {
+    font-size: 3em;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.514);
+}
+
+header > div#imenuhamburguer {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    padding: 5px;
+}
+
+header > div#imenuhamburguer > img {
+    width: 50px;
+}
+
+header > div#imenuhamburguer > img:hover {
+    cursor: pointer;
+}
+
+header > div#imenu {
+    display: none;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 5px 0px;
+    border-top: 2px solid rgb(39, 39, 39);
+}
+
+header > div#imenu a.itens {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(61, 61, 61);
+    
+    margin: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.664);
+    border-radius: 10px;
+    padding: 5px;
+    width: 95vw;
+    flex: 1 0 ;
+}
+
+header > div#imenu a.itens:hover {
+    color: black;
+    background-color: rgb(214, 214, 214);
+}
+
+main {
+    width: 80vw;
+    margin: 5px auto 0px auto;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(245, 245, 245);
+}
+
+main > h1 {
+    text-align: center;
+    padding: 5px;
+}
+
+main > p {
+    padding: 5px;
+}
